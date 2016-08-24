@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ObjectiveWMM_Tests' do
+  pod 'ObjectiveWMM', :path => '../'
+  
+  
+end

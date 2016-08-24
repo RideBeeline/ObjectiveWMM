@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B1277B21D6DDD2D00845D96 /* ObjectiveWMM.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1277B11D6DDD2D00845D96 /* ObjectiveWMM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1277B91D6DDD2D00845D96 /* ObjectiveWMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1277AF1D6DDD2D00845D96 /* ObjectiveWMM.framework */; };
+		1B1277BE1D6DDD2D00845D96 /* ObjectiveWMMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277BD1D6DDD2D00845D96 /* ObjectiveWMMTests.m */; };
+		1B1277D61D6DDD7200845D96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1277D41D6DDD5F00845D96 /* CoreLocation.framework */; };
+		1B1277E01D6DDDC100845D96 /* DeclinationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277DD1D6DDDC100845D96 /* DeclinationTests.m */; };
+		1B1277E11D6DDDC100845D96 /* FieldStrengthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277DE1D6DDDC100845D96 /* FieldStrengthTests.m */; };
+		1B1277E21D6DDDC100845D96 /* InclinationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277DF1D6DDDC100845D96 /* InclinationTests.m */; };
+		1B1277EE1D6DDE6F00845D96 /* ObjectiveWMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1277AF1D6DDD2D00845D96 /* ObjectiveWMM.framework */; };
+		1B1277F31D6DE14700845D96 /* CCGeomagneticParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1277EF1D6DE14700845D96 /* CCGeomagneticParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1277F41D6DE14700845D96 /* CCGeomagneticParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277F01D6DE14700845D96 /* CCGeomagneticParameters.m */; };
+		1B1277F51D6DE14700845D96 /* CCMagneticModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1277F11D6DE14700845D96 /* CCMagneticModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1277F61D6DE14700845D96 /* CCMagneticModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277F21D6DE14700845D96 /* CCMagneticModel.m */; };
+		1B1277FA1D6DE14F00845D96 /* NSDate+DecimalYear.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1277F71D6DE14F00845D96 /* NSDate+DecimalYear.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1277FB1D6DE14F00845D96 /* NSDate+DecimalYear.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277F81D6DE14F00845D96 /* NSDate+DecimalYear.m */; };
+		1B1277FC1D6DE14F00845D96 /* ObjectiveWMM.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1277F91D6DE14F00845D96 /* ObjectiveWMM.h */; };
+		1B1278011D6DE16300845D96 /* EGM9615.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1277FD1D6DE16300845D96 /* EGM9615.h */; };
+		1B1278021D6DE16300845D96 /* GeomagnetismHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1277FE1D6DE16300845D96 /* GeomagnetismHeader.h */; };
+		1B1278031D6DE16300845D96 /* GeomagnetismLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277FF1D6DE16300845D96 /* GeomagnetismLibrary.c */; };
+		1B1278041D6DE16300845D96 /* WMM.COF in Resources */ = {isa = PBXBuildFile; fileRef = 1B1278001D6DE16300845D96 /* WMM.COF */; };
+		1B1278061D6DE2A400845D96 /* PUBLIC_DOMAIN in Resources */ = {isa = PBXBuildFile; fileRef = 1B1278051D6DE2A400845D96 /* PUBLIC_DOMAIN */; };
+		1B5F24B61D6DE3BE00F66108 /* DeclinationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F24B21D6DE3BE00F66108 /* DeclinationTests.m */; };
+		1B5F24B71D6DE3BE00F66108 /* FieldStrengthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F24B31D6DE3BE00F66108 /* FieldStrengthTests.m */; };
+		1B5F24B81D6DE3BE00F66108 /* InclinationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F24B41D6DE3BE00F66108 /* InclinationTests.m */; };
+		1B5F24B91D6DE3BE00F66108 /* ObjectiveWMMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F24B51D6DE3BE00F66108 /* ObjectiveWMMTests.m */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		DF94CB0682BB7DF75971073A /* Pods_ObjectiveWMM_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0135BCB33D74A0264334FE2 /* Pods_ObjectiveWMM_Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B1277BA1D6DDD2D00845D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B1277AE1D6DDD2D00845D96;
+			remoteInfo = ObjectiveWMM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B1277AF1D6DDD2D00845D96 /* ObjectiveWMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveWMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1277B11D6DDD2D00845D96 /* ObjectiveWMM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveWMM.h; sourceTree = "<group>"; };
+		1B1277B31D6DDD2D00845D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B1277B81D6DDD2D00845D96 /* ObjectiveWMMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveWMMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1277BD1D6DDD2D00845D96 /* ObjectiveWMMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveWMMTests.m; sourceTree = "<group>"; };
+		1B1277BF1D6DDD2D00845D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B1277D41D6DDD5F00845D96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1B1277DD1D6DDDC100845D96 /* DeclinationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeclinationTests.m; sourceTree = "<group>"; };
+		1B1277DE1D6DDDC100845D96 /* FieldStrengthTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldStrengthTests.m; sourceTree = "<group>"; };
+		1B1277DF1D6DDDC100845D96 /* InclinationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InclinationTests.m; sourceTree = "<group>"; };
+		1B1277EF1D6DE14700845D96 /* CCGeomagneticParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCGeomagneticParameters.h; path = ObjectiveWMM/CCGeomagneticParameters.h; sourceTree = "<group>"; };
+		1B1277F01D6DE14700845D96 /* CCGeomagneticParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCGeomagneticParameters.m; path = ObjectiveWMM/CCGeomagneticParameters.m; sourceTree = "<group>"; };
+		1B1277F11D6DE14700845D96 /* CCMagneticModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMagneticModel.h; path = ObjectiveWMM/CCMagneticModel.h; sourceTree = "<group>"; };
+		1B1277F21D6DE14700845D96 /* CCMagneticModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCMagneticModel.m; path = ObjectiveWMM/CCMagneticModel.m; sourceTree = "<group>"; };
+		1B1277F71D6DE14F00845D96 /* NSDate+DecimalYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+DecimalYear.h"; path = "ObjectiveWMM/NSDate+DecimalYear.h"; sourceTree = "<group>"; };
+		1B1277F81D6DE14F00845D96 /* NSDate+DecimalYear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DecimalYear.m"; path = "ObjectiveWMM/NSDate+DecimalYear.m"; sourceTree = "<group>"; };
+		1B1277F91D6DE14F00845D96 /* ObjectiveWMM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectiveWMM.h; path = ObjectiveWMM/ObjectiveWMM.h; sourceTree = "<group>"; };
+		1B1277FD1D6DE16300845D96 /* EGM9615.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGM9615.h; path = ObjectiveWMM/WMM/EGM9615.h; sourceTree = "<group>"; };
+		1B1277FE1D6DE16300845D96 /* GeomagnetismHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeomagnetismHeader.h; path = ObjectiveWMM/WMM/GeomagnetismHeader.h; sourceTree = "<group>"; };
+		1B1277FF1D6DE16300845D96 /* GeomagnetismLibrary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = GeomagnetismLibrary.c; path = ObjectiveWMM/WMM/GeomagnetismLibrary.c; sourceTree = "<group>"; };
+		1B1278001D6DE16300845D96 /* WMM.COF */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WMM.COF; path = ObjectiveWMM/WMM/WMM.COF; sourceTree = "<group>"; };
+		1B1278051D6DE2A400845D96 /* PUBLIC_DOMAIN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PUBLIC_DOMAIN; path = ObjectiveWMM/WMM/PUBLIC_DOMAIN; sourceTree = "<group>"; };
+		1B5F24B21D6DE3BE00F66108 /* DeclinationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeclinationTests.m; sourceTree = "<group>"; };
+		1B5F24B31D6DE3BE00F66108 /* FieldStrengthTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldStrengthTests.m; sourceTree = "<group>"; };
+		1B5F24B41D6DE3BE00F66108 /* InclinationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InclinationTests.m; sourceTree = "<group>"; };
+		1B5F24B51D6DE3BE00F66108 /* ObjectiveWMMTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveWMMTests.m; sourceTree = "<group>"; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F5AE195388D20070C39A /* ObjectiveWMM_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveWMM_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6C9C5428D797F8CB8412A131 /* Pods-ObjectiveWMM_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveWMM_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveWMM_Tests/Pods-ObjectiveWMM_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0D06779385485465EA5CDA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B329EC430981753512BE57F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C2EDD7D4A8E46C87728900FB /* Pods-ObjectiveWMM_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveWMM_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveWMM_Tests/Pods-ObjectiveWMM_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DF47F649D6D4062A0B9F1BB6 /* ObjectiveWMM.podspec */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; includeInIndex = 1; name = ObjectiveWMM.podspec; path = ../ObjectiveWMM.podspec; sourceTree = "<group>"; };
+		E0135BCB33D74A0264334FE2 /* Pods_ObjectiveWMM_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveWMM_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B1277AB1D6DDD2D00845D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1277D61D6DDD7200845D96 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B1277B51D6DDD2D00845D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1277B91D6DDD2D00845D96 /* ObjectiveWMM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				1B1277EE1D6DDE6F00845D96 /* ObjectiveWMM.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				DF94CB0682BB7DF75971073A /* Pods_ObjectiveWMM_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B1277A91D6DDC7700845D96 /* ObjectiveWMM */ = {
+			isa = PBXGroup;
+			children = (
+				1B1277EF1D6DE14700845D96 /* CCGeomagneticParameters.h */,
+				1B1277F01D6DE14700845D96 /* CCGeomagneticParameters.m */,
+				1B1277F11D6DE14700845D96 /* CCMagneticModel.h */,
+				1B1277F21D6DE14700845D96 /* CCMagneticModel.m */,
+				1B1277F71D6DE14F00845D96 /* NSDate+DecimalYear.h */,
+				1B1277F81D6DE14F00845D96 /* NSDate+DecimalYear.m */,
+				1B1277F91D6DE14F00845D96 /* ObjectiveWMM.h */,
+				1B1277E31D6DDDFA00845D96 /* WMM */,
+			);
+			name = ObjectiveWMM;
+			sourceTree = "<group>";
+		};
+		1B1277B01D6DDD2D00845D96 /* ObjectiveWMM */ = {
+			isa = PBXGroup;
+			children = (
+				1B1277B11D6DDD2D00845D96 /* ObjectiveWMM.h */,
+				1B1277B31D6DDD2D00845D96 /* Info.plist */,
+			);
+			path = ObjectiveWMM;
+			sourceTree = "<group>";
+		};
+		1B1277BC1D6DDD2D00845D96 /* ObjectiveWMMTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B1277DD1D6DDDC100845D96 /* DeclinationTests.m */,
+				1B1277DE1D6DDDC100845D96 /* FieldStrengthTests.m */,
+				1B1277DF1D6DDDC100845D96 /* InclinationTests.m */,
+				1B1277BD1D6DDD2D00845D96 /* ObjectiveWMMTests.m */,
+				1B1277BF1D6DDD2D00845D96 /* Info.plist */,
+			);
+			path = ObjectiveWMMTests;
+			sourceTree = "<group>";
+		};
+		1B1277E31D6DDDFA00845D96 /* WMM */ = {
+			isa = PBXGroup;
+			children = (
+				1B1277FD1D6DE16300845D96 /* EGM9615.h */,
+				1B1277FE1D6DE16300845D96 /* GeomagnetismHeader.h */,
+				1B1277FF1D6DE16300845D96 /* GeomagnetismLibrary.c */,
+				1B1278001D6DE16300845D96 /* WMM.COF */,
+				1B1278051D6DE2A400845D96 /* PUBLIC_DOMAIN */,
+			);
+			name = WMM;
+			sourceTree = "<group>";
+		};
+		3678C2874A87308A0D131A49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C9C5428D797F8CB8412A131 /* Pods-ObjectiveWMM_Tests.debug.xcconfig */,
+				C2EDD7D4A8E46C87728900FB /* Pods-ObjectiveWMM_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				1B1277A91D6DDC7700845D96 /* ObjectiveWMM */,
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F5B5195388D20070C39A /* Tests */,
+				1B1277B01D6DDD2D00845D96 /* ObjectiveWMM */,
+				1B1277BC1D6DDD2D00845D96 /* ObjectiveWMMTests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				3678C2874A87308A0D131A49 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5AE195388D20070C39A /* ObjectiveWMM_Tests.xctest */,
+				1B1277AF1D6DDD2D00845D96 /* ObjectiveWMM.framework */,
+				1B1277B81D6DDD2D00845D96 /* ObjectiveWMMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B1277D41D6DDD5F00845D96 /* CoreLocation.framework */,
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				E0135BCB33D74A0264334FE2 /* Pods_ObjectiveWMM_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1B5F24B21D6DE3BE00F66108 /* DeclinationTests.m */,
+				1B5F24B31D6DE3BE00F66108 /* FieldStrengthTests.m */,
+				1B5F24B41D6DE3BE00F66108 /* InclinationTests.m */,
+				1B5F24B51D6DE3BE00F66108 /* ObjectiveWMMTests.m */,
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				DF47F649D6D4062A0B9F1BB6 /* ObjectiveWMM.podspec */,
+				B0D06779385485465EA5CDA6 /* README.md */,
+				B329EC430981753512BE57F1 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B1277AC1D6DDD2D00845D96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1277F31D6DE14700845D96 /* CCGeomagneticParameters.h in Headers */,
+				1B1278011D6DE16300845D96 /* EGM9615.h in Headers */,
+				1B1277FA1D6DE14F00845D96 /* NSDate+DecimalYear.h in Headers */,
+				1B1277F51D6DE14700845D96 /* CCMagneticModel.h in Headers */,
+				1B1277B21D6DDD2D00845D96 /* ObjectiveWMM.h in Headers */,
+				1B1278021D6DE16300845D96 /* GeomagnetismHeader.h in Headers */,
+				1B1277FC1D6DE14F00845D96 /* ObjectiveWMM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B1277AE1D6DDD2D00845D96 /* ObjectiveWMM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B1277C01D6DDD2D00845D96 /* Build configuration list for PBXNativeTarget "ObjectiveWMM" */;
+			buildPhases = (
+				1B1277AA1D6DDD2D00845D96 /* Sources */,
+				1B1277AB1D6DDD2D00845D96 /* Frameworks */,
+				1B1277AC1D6DDD2D00845D96 /* Headers */,
+				1B1277AD1D6DDD2D00845D96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveWMM;
+			productName = ObjectiveWMM;
+			productReference = 1B1277AF1D6DDD2D00845D96 /* ObjectiveWMM.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1B1277B71D6DDD2D00845D96 /* ObjectiveWMMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B1277C31D6DDD2D00845D96 /* Build configuration list for PBXNativeTarget "ObjectiveWMMTests" */;
+			buildPhases = (
+				1B1277B41D6DDD2D00845D96 /* Sources */,
+				1B1277B51D6DDD2D00845D96 /* Frameworks */,
+				1B1277B61D6DDD2D00845D96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B1277BB1D6DDD2D00845D96 /* PBXTargetDependency */,
+			);
+			name = ObjectiveWMMTests;
+			productName = ObjectiveWMMTests;
+			productReference = 1B1277B81D6DDD2D00845D96 /* ObjectiveWMMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6003F5AD195388D20070C39A /* ObjectiveWMM_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ObjectiveWMM_Tests" */;
+			buildPhases = (
+				B0622A3198924D6C82CA283B /* Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+				3F1ACD1A80AFCA70FDD28BD2 /* Embed Pods Frameworks */,
+				7DBA8D05BAAEC2BCEC7E46FE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveWMM_Tests;
+			productName = ObjectiveWMMTests;
+			productReference = 6003F5AE195388D20070C39A /* ObjectiveWMM_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Daniel Morgan";
+				TargetAttributes = {
+					1B1277AE1D6DDD2D00845D96 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1B1277B71D6DDD2D00845D96 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "ObjectiveWMM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F5AD195388D20070C39A /* ObjectiveWMM_Tests */,
+				1B1277AE1D6DDD2D00845D96 /* ObjectiveWMM */,
+				1B1277B71D6DDD2D00845D96 /* ObjectiveWMMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B1277AD1D6DDD2D00845D96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1278041D6DE16300845D96 /* WMM.COF in Resources */,
+				1B1278061D6DE2A400845D96 /* PUBLIC_DOMAIN in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B1277B61D6DDD2D00845D96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F1ACD1A80AFCA70FDD28BD2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectiveWMM_Tests/Pods-ObjectiveWMM_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DBA8D05BAAEC2BCEC7E46FE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectiveWMM_Tests/Pods-ObjectiveWMM_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0622A3198924D6C82CA283B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B1277AA1D6DDD2D00845D96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1277FB1D6DE14F00845D96 /* NSDate+DecimalYear.m in Sources */,
+				1B1277F41D6DE14700845D96 /* CCGeomagneticParameters.m in Sources */,
+				1B1277F61D6DE14700845D96 /* CCMagneticModel.m in Sources */,
+				1B1278031D6DE16300845D96 /* GeomagnetismLibrary.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B1277B41D6DDD2D00845D96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1277E21D6DDDC100845D96 /* InclinationTests.m in Sources */,
+				1B1277E01D6DDDC100845D96 /* DeclinationTests.m in Sources */,
+				1B1277E11D6DDDC100845D96 /* FieldStrengthTests.m in Sources */,
+				1B1277BE1D6DDD2D00845D96 /* ObjectiveWMMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5F24B81D6DE3BE00F66108 /* InclinationTests.m in Sources */,
+				1B5F24B61D6DE3BE00F66108 /* DeclinationTests.m in Sources */,
+				1B5F24B71D6DE3BE00F66108 /* FieldStrengthTests.m in Sources */,
+				1B5F24B91D6DE3BE00F66108 /* ObjectiveWMMTests.m in Sources */,
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B1277BB1D6DDD2D00845D96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B1277AE1D6DDD2D00845D96 /* ObjectiveWMM */;
+			targetProxy = 1B1277BA1D6DDD2D00845D96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B1277C11D6DDD2D00845D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ObjectiveWMM/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RelishTechnologies.ObjectiveWMM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B1277C21D6DDD2D00845D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ObjectiveWMM/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RelishTechnologies.ObjectiveWMM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B1277C41D6DDD2D00845D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ObjectiveWMMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RelishTechnologies.ObjectiveWMMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B1277C51D6DDD2D00845D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ObjectiveWMMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RelishTechnologies.ObjectiveWMMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9C5428D797F8CB8412A131 /* Pods-ObjectiveWMM_Tests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveWMM_Example.app/ObjectiveWMM_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2EDD7D4A8E46C87728900FB /* Pods-ObjectiveWMM_Tests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveWMM_Example.app/ObjectiveWMM_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B1277C01D6DDD2D00845D96 /* Build configuration list for PBXNativeTarget "ObjectiveWMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B1277C11D6DDD2D00845D96 /* Debug */,
+				1B1277C21D6DDD2D00845D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B1277C31D6DDD2D00845D96 /* Build configuration list for PBXNativeTarget "ObjectiveWMMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B1277C41D6DDD2D00845D96 /* Debug */,
+				1B1277C51D6DDD2D00845D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "ObjectiveWMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ObjectiveWMM_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

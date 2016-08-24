@@ -1,0 +1,14 @@
+PODS:
+  - ObjectiveWMM (0.1.0)
+
+DEPENDENCIES:
+  - ObjectiveWMM (from `../`)
+
+EXTERNAL SOURCES:
+  ObjectiveWMM:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ObjectiveWMM: a8233c85cc0fe432738e24119b4d85f482eab463
+
+COCOAPODS: 0.39.0
