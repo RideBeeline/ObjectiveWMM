@@ -69,7 +69,6 @@
     
     NSLog(@"field Strength = %f", declination.fieldStrength);
     XCTAssertEqualWithAccuracy(declination.fieldStrength, 54836.0/1000.0, 0.005, @"Unexpected force");
-    
 }
 
 #pragma mark - Helper methods
