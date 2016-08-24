@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface CCMagneticDeclination : NSObject <NSCopying, NSCoding>
+@interface CCGeomagneticParameters : NSObject <NSCopying, NSCoding>
 
 - (id) initWithCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date magneticDeclination:(CLLocationDirection)magneticDeclination fieldStrength:(double)fieldStrength;
 

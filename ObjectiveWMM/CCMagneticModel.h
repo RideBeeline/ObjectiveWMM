@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import "CCMagneticDeclination.h"
+#import "CCGeomagneticParameters.h"
 
 @interface CCMagneticModel : NSObject
 
 + (CCMagneticModel *) instance;
 
 +(CLLocationDirection) declinationForLocation:(CLLocation *) location;
-- (CCMagneticDeclination *) declinationForCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date;
+- (CCGeomagneticParameters *) declinationForCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date;
 - (BOOL) dateIsWithinModelBounds:(NSDate *) date;
 - (NSDate *) modelValidityStart;
 - (NSDate *) modelValidityEnd;
