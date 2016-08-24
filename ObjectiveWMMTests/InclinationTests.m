@@ -64,14 +64,165 @@
     
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
+    CLLocationDistance elevation = 0;
+
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:0 date:date];
-    
-    NSLog(@"field Strength = %f", declination.fieldStrength);
-    XCTAssertEqualWithAccuracy(declination.fieldStrength, 54836.0/1000.0, 0.005, @"Unexpected force");
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+
+    XCTAssertEqualWithAccuracy(params.magneticInclination, 83.04, [self accuracy], @"Unexpected Inclination");
 }
 
+- (void) testInclination02 {
+    
+    NSDate *date = [self dateForYear:2015 month:1 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
+    CLLocationDistance elevation = 0;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -15.89, [self accuracy], @"Unexpected Inclination");
+}
+
+- (void) testInclination03 {
+    
+    NSDate *date = [self dateForYear:2015 month:1 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
+    CLLocationDistance elevation = 0;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -72.39, [self accuracy], @"Unexpected Inclination");
+}
+
+- (void) testInclination04 {
+    
+    NSDate *date = [self dateForYear:2015 month:1 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
+    CLLocationDistance elevation = 100;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, 83.09, [self accuracy], @"Unexpected Inclination");
+
+}
+
+- (void) testInclination05 {
+    
+    NSDate *date = [self dateForYear:2015 month:1 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
+    CLLocationDistance elevation = 100;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -16.01, [self accuracy], @"Unexpected Inclination");
+    
+}
+
+- (void) testInclination06 {
+    
+    NSDate *date = [self dateForYear:2015 month:1 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
+    CLLocationDistance elevation = 100;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -72.57, [self accuracy], @"Unexpected Inclination");
+    
+}
+
+- (void) testInclination07 {
+    
+    NSDate *date = [self dateForYear:2017 month:5 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
+    CLLocationDistance elevation = 0;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, 83.08, [self accuracy], @"Unexpected Inclination");
+    
+}
+
+- (void) testInclination08 {
+    
+    NSDate *date = [self dateForYear:2017 month:5 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
+    CLLocationDistance elevation = 0;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -15.57, [self accuracy], @"Unexpected Inclination");
+}
+
+- (void) testInclination09 {
+    
+    NSDate *date = [self dateForYear:2017 month:5 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
+    CLLocationDistance elevation = 0;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -72.28, [self accuracy], @"Unexpected Inclination");
+}
+
+- (void) testInclination10 {
+    
+    NSDate *date = [self dateForYear:2017 month:5 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
+    CLLocationDistance elevation = 100;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, 83.13, [self accuracy], @"Unexpected Inclination");
+    
+}
+
+- (void) testInclination11 {
+    
+    NSDate *date = [self dateForYear:2017 month:5 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
+    CLLocationDistance elevation = 100;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -15.70, [self accuracy], @"Unexpected Inclination");
+    
+}
+
+- (void) testInclination12 {
+    
+    NSDate *date = [self dateForYear:2017 month:5 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
+    CLLocationDistance elevation = 100;
+    
+    CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
+    
+    XCTAssertEqualWithAccuracy(params.magneticInclination, -72.45, [self accuracy], @"Unexpected Inclination");
+    
+}
+
+
 #pragma mark - Helper methods
+
+- (double)accuracy {
+    return 0.2;
+}
 
 - (NSDate *) dateForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
     

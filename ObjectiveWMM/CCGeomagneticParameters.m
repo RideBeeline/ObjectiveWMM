@@ -33,6 +33,7 @@ static inline double withinZeroTo360(double degrees) {
         _elevation = elevation;
         _date = date;
         _magneticDeclination = magneticDeclination;
+        _magneticInclination = magneticInclination;
         _fieldStrength = fieldStrength;
     }
     

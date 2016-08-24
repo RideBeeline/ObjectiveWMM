@@ -139,6 +139,8 @@ const char * getPathForResource(const char *fileName, const char *fileExtension)
         
         MAG_CalculateGridVariation(coordGeodetic, &geoMagneticElements);
         
+        //NSLog(@"Inclination: %f",geoMagneticElements.Incl);
+        
         CCGeomagneticParameters *result = [[CCGeomagneticParameters alloc] initWithCoordinate:coordinate elevation:elevation date:date magneticDeclination:geoMagneticElements.Decl magneticInclination:geoMagneticElements.Incl fieldStrength:geoMagneticElements.F/1000.0];
         
         return result;
