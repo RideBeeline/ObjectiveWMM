@@ -67,8 +67,6 @@
     CLLocationDistance elevation = 0;
 
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
-    
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
 
     XCTAssertEqualWithAccuracy(params.magneticInclination, 83.04, [self accuracy], @"Unexpected Inclination");
 }
@@ -80,8 +78,6 @@
     CLLocationDistance elevation = 0;
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
-    
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
 
     XCTAssertEqualWithAccuracy(params.magneticInclination, -15.89, [self accuracy], @"Unexpected Inclination");
 }
@@ -94,8 +90,6 @@
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
     
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
-    
     XCTAssertEqualWithAccuracy(params.magneticInclination, -72.39, [self accuracy], @"Unexpected Inclination");
 }
 
@@ -106,8 +100,6 @@
     CLLocationDistance elevation = 100;
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
-    
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
     
     XCTAssertEqualWithAccuracy(params.magneticInclination, 83.09, [self accuracy], @"Unexpected Inclination");
 
@@ -120,8 +112,6 @@
     CLLocationDistance elevation = 100;
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
-    
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
     
     XCTAssertEqualWithAccuracy(params.magneticInclination, -16.01, [self accuracy], @"Unexpected Inclination");
     
@@ -159,7 +149,6 @@
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
     
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
     
     XCTAssertEqualWithAccuracy(params.magneticInclination, -15.57, [self accuracy], @"Unexpected Inclination");
 }
@@ -172,7 +161,6 @@
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
     
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
     
     XCTAssertEqualWithAccuracy(params.magneticInclination, -72.28, [self accuracy], @"Unexpected Inclination");
 }
@@ -185,7 +173,6 @@
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
     
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
     
     XCTAssertEqualWithAccuracy(params.magneticInclination, 83.13, [self accuracy], @"Unexpected Inclination");
     
@@ -199,7 +186,6 @@
     
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
     
-    NSLog(@"Inclination = %f Declination = %f", params.magneticInclination, params.magneticDeclination);
     
     XCTAssertEqualWithAccuracy(params.magneticInclination, -15.70, [self accuracy], @"Unexpected Inclination");
     
@@ -214,7 +200,7 @@
     CCGeomagneticParameters *params = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:elevation date:date];
     
     XCTAssertEqualWithAccuracy(params.magneticInclination, -72.45, [self accuracy], @"Unexpected Inclination");
-    
+
 }
 
 
