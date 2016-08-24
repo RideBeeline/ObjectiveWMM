@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char ObjectiveWMMVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ObjectiveWMM/PublicHeader.h>
 
-#import <ObjectiveWMM/CCMagneticDeclination.h>
+#import <ObjectiveWMM/CCGeomagneticParameters.h>
 #import <ObjectiveWMM/CCMagneticModel.h>

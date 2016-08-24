@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1277A61D6DC8A400845D96 /* FieldStrengthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B70F8F81D6DC2C900AC4F6E /* FieldStrengthTests.m */; };
+		1B1277A81D6DCBF500845D96 /* InclinationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277A71D6DCBF500845D96 /* InclinationTests.m */; };
 		DC37B8661B3375E70041F93C /* ObjectiveWMM.h in Headers */ = {isa = PBXBuildFile; fileRef = DC70A01A1A400ED50055DCDE /* ObjectiveWMM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC709FCC1A3FDB2E0055DCDE /* CCMagneticDeclination.h in Headers */ = {isa = PBXBuildFile; fileRef = DC709FB11A3FDB2E0055DCDE /* CCMagneticDeclination.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC709FCD1A3FDB2E0055DCDE /* CCMagneticDeclination.m in Sources */ = {isa = PBXBuildFile; fileRef = DC709FB21A3FDB2E0055DCDE /* CCMagneticDeclination.m */; };
+		DC709FCC1A3FDB2E0055DCDE /* CCGeomagneticParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = DC709FB11A3FDB2E0055DCDE /* CCGeomagneticParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC709FCD1A3FDB2E0055DCDE /* CCGeomagneticParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = DC709FB21A3FDB2E0055DCDE /* CCGeomagneticParameters.m */; };
 		DC709FCE1A3FDB2E0055DCDE /* CCMagneticModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DC709FB31A3FDB2E0055DCDE /* CCMagneticModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC709FCF1A3FDB2E0055DCDE /* CCMagneticModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC709FB41A3FDB2E0055DCDE /* CCMagneticModel.m */; };
 		DC709FD91A3FDB2F0055DCDE /* NSDate+DecimalYear.h in Headers */ = {isa = PBXBuildFile; fileRef = DC709FC01A3FDB2E0055DCDE /* NSDate+DecimalYear.h */; };
@@ -35,8 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC709FB11A3FDB2E0055DCDE /* CCMagneticDeclination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMagneticDeclination.h; sourceTree = "<group>"; };
-		DC709FB21A3FDB2E0055DCDE /* CCMagneticDeclination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMagneticDeclination.m; sourceTree = "<group>"; };
+		1B1277A71D6DCBF500845D96 /* InclinationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InclinationTests.m; path = ObjectiveWMMTests/InclinationTests.m; sourceTree = SOURCE_ROOT; };
+		1B70F8F81D6DC2C900AC4F6E /* FieldStrengthTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FieldStrengthTests.m; path = ObjectiveWMMTests/FieldStrengthTests.m; sourceTree = SOURCE_ROOT; };
+		DC709FB11A3FDB2E0055DCDE /* CCGeomagneticParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGeomagneticParameters.h; sourceTree = "<group>"; };
+		DC709FB21A3FDB2E0055DCDE /* CCGeomagneticParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGeomagneticParameters.m; sourceTree = "<group>"; };
 		DC709FB31A3FDB2E0055DCDE /* CCMagneticModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMagneticModel.h; sourceTree = "<group>"; };
 		DC709FB41A3FDB2E0055DCDE /* CCMagneticModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMagneticModel.m; sourceTree = "<group>"; };
 		DC709FC01A3FDB2E0055DCDE /* NSDate+DecimalYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DecimalYear.h"; sourceTree = "<group>"; };
@@ -78,8 +82,8 @@
 		DC709FAE1A3FDB2E0055DCDE /* ObjectiveWMM */ = {
 			isa = PBXGroup;
 			children = (
-				DC709FB11A3FDB2E0055DCDE /* CCMagneticDeclination.h */,
-				DC709FB21A3FDB2E0055DCDE /* CCMagneticDeclination.m */,
+				DC709FB11A3FDB2E0055DCDE /* CCGeomagneticParameters.h */,
+				DC709FB21A3FDB2E0055DCDE /* CCGeomagneticParameters.m */,
 				DC709FB31A3FDB2E0055DCDE /* CCMagneticModel.h */,
 				DC709FB41A3FDB2E0055DCDE /* CCMagneticModel.m */,
 				DC709FC01A3FDB2E0055DCDE /* NSDate+DecimalYear.h */,
@@ -143,6 +147,8 @@
 			children = (
 				DC71D8E1197E067F00C665CB /* Supporting Files */,
 				DC709FEA1A3FDDE30055DCDE /* DeclinationTests.m */,
+				1B70F8F81D6DC2C900AC4F6E /* FieldStrengthTests.m */,
+				1B1277A71D6DCBF500845D96 /* InclinationTests.m */,
 			);
 			name = ObjectiveWMMTests;
 			path = meeus64Tests;
@@ -164,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC37B8661B3375E70041F93C /* ObjectiveWMM.h in Headers */,
-				DC709FCC1A3FDB2E0055DCDE /* CCMagneticDeclination.h in Headers */,
+				DC709FCC1A3FDB2E0055DCDE /* CCGeomagneticParameters.h in Headers */,
 				DC709FCE1A3FDB2E0055DCDE /* CCMagneticModel.h in Headers */,
 				DC709FDE1A3FDB2F0055DCDE /* GeomagnetismHeader.h in Headers */,
 				DC709FDD1A3FDB2F0055DCDE /* EGM9615.h in Headers */,
@@ -272,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC709FDF1A3FDB2F0055DCDE /* GeomagnetismLibrary.c in Sources */,
-				DC709FCD1A3FDB2E0055DCDE /* CCMagneticDeclination.m in Sources */,
+				DC709FCD1A3FDB2E0055DCDE /* CCGeomagneticParameters.m in Sources */,
 				DC709FDA1A3FDB2F0055DCDE /* NSDate+DecimalYear.m in Sources */,
 				DC709FCF1A3FDB2E0055DCDE /* CCMagneticModel.m in Sources */,
 			);
@@ -282,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1277A81D6DCBF500845D96 /* InclinationTests.m in Sources */,
 				DC709FEB1A3FDDE30055DCDE /* DeclinationTests.m in Sources */,
+				1B1277A61D6DC8A400845D96 /* FieldStrengthTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -102,13 +102,13 @@ const char * getPathForResource(const char *fileName, const char *fileExtension)
     MAG_FreeMagneticModelMemory(_magneticModels[0]);
 }
 
-+(CLLocationDirection) declinationForLocation:(CLLocation *) location {
++(CLLocationDirection) magneticParametersForLocation:(CLLocation *) location {
     CCMagneticModel *instance = [CCMagneticModel instance];
-    CCMagneticDeclination *declination = [instance declinationForCoordinate:location.coordinate elevation:location.altitude date:location.timestamp];
+    CCGeomagneticParameters *declination = [instance magneticParametersForCoordinate:location.coordinate elevation:location.altitude date:location.timestamp];
     return declination.magneticDeclination;
 }
 
-- (CCMagneticDeclination *) declinationForCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date {
+- (CCGeomagneticParameters *) magneticParametersForCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date {
     
     MAGtype_CoordSpherical coordSpherical;
     MAGtype_Date userDate;
@@ -139,7 +139,9 @@ const char * getPathForResource(const char *fileName, const char *fileExtension)
         
         MAG_CalculateGridVariation(coordGeodetic, &geoMagneticElements);
         
-        CCMagneticDeclination *result = [[CCMagneticDeclination alloc] initWithCoordinate:coordinate elevation:elevation date:date magneticDeclination:geoMagneticElements.Decl fieldStrength:geoMagneticElements.F/1000.0];
+        //NSLog(@"Inclination: %f",geoMagneticElements.Incl);
+        
+        CCGeomagneticParameters *result = [[CCGeomagneticParameters alloc] initWithCoordinate:coordinate elevation:elevation date:date magneticDeclination:geoMagneticElements.Decl magneticInclination:geoMagneticElements.Incl fieldStrength:geoMagneticElements.F/1000.0];
         
         return result;
     }

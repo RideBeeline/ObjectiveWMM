@@ -6,25 +6,26 @@
 //  Copyright (c) 2013 Crookneck Consulting LLC. All rights reserved.
 //
 
-#import "CCMagneticDeclination.h"
+#import "CCGeomagneticParameters.h"
 
 static inline double withinZeroTo360(double degrees) {
     return (degrees - (360.0 * floor(degrees/360.0)));
 }
 
-@interface CCMagneticDeclination()
+@interface CCGeomagneticParameters()
 
 @property (readwrite, nonatomic) CLLocationCoordinate2D coordinate;
 @property (readwrite, nonatomic) CLLocationDistance elevation;
 @property (readwrite, nonatomic, strong) NSDate *date;
 @property (readwrite, nonatomic) CLLocationDirection magneticDeclination;
+@property (readwrite, nonatomic) CLLocationDirection magneticInclination;
 @property (readwrite, nonatomic) double fieldStrength;
 
 @end
 
-@implementation CCMagneticDeclination
+@implementation CCGeomagneticParameters
 
-- (id) initWithCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date magneticDeclination:(CLLocationDirection)magneticDeclination  fieldStrength:(double)fieldStrength {
+- (id) initWithCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date magneticDeclination:(CLLocationDirection)magneticDeclination magneticInclination:(CLLocationDirection)magneticInclination fieldStrength:(double)fieldStrength {
     
     self = [super init];
     if (self) {
@@ -32,6 +33,7 @@ static inline double withinZeroTo360(double degrees) {
         _elevation = elevation;
         _date = date;
         _magneticDeclination = magneticDeclination;
+        _magneticInclination = magneticInclination;
         _fieldStrength = fieldStrength;
     }
     
@@ -49,7 +51,7 @@ static inline double withinZeroTo360(double degrees) {
 
 - (id)copyWithZone:(NSZone *)zone {
     
-    CCMagneticDeclination *magneticDeclination = [[CCMagneticDeclination allocWithZone:zone] initWithCoordinate:self.coordinate elevation:self.elevation date:self.date magneticDeclination:self.magneticDeclination fieldStrength:self.fieldStrength];
+    CCGeomagneticParameters *magneticDeclination = [[CCGeomagneticParameters allocWithZone:zone] initWithCoordinate:self.coordinate elevation:self.elevation date:self.date magneticDeclination:self.magneticDeclination magneticInclination:self.magneticInclination fieldStrength:self.fieldStrength];
     
     return magneticDeclination;
 }
@@ -64,7 +66,7 @@ static inline double withinZeroTo360(double degrees) {
     CLLocationDirection magneticDeclination = [aDecoder decodeDoubleForKey:@"magneticDeclination"];
     double fieldStrength = [aDecoder decodeDoubleForKey:@"fieldStrength"];
     
-    self = [self initWithCoordinate:coord elevation:elevation date:date magneticDeclination:magneticDeclination fieldStrength:fieldStrength];
+    self = [self initWithCoordinate:coord elevation:elevation date:date magneticDeclination:magneticDeclination magneticInclination:self.magneticInclination fieldStrength:fieldStrength];
     if (!self) {
         return nil;
     }
