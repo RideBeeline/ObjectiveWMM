@@ -65,7 +65,7 @@
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, -3.85, 0.005, @"Unexpected declination");
@@ -77,7 +77,7 @@
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 0.57, 0.005, @"Unexpected declination");
@@ -89,7 +89,7 @@
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 69.81, 0.005, @"Unexpected declination");
@@ -101,7 +101,7 @@
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:100000 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:100000 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, -4.27, 0.005, @"Unexpected declination");
@@ -113,7 +113,7 @@
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:100000 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:100000 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 0.56, 0.005, @"Unexpected declination");
@@ -125,7 +125,7 @@
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:100000 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:100000 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 69.22, 0.005, @"Unexpected declination");
@@ -137,7 +137,7 @@
     NSDate *date = [self dateForYear:2017 month:7 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, -2.75, 0.005, @"Unexpected declination");
@@ -149,7 +149,7 @@
     NSDate *date = [self dateForYear:2017 month:7 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 0.32, 0.005, @"Unexpected declination");
@@ -161,7 +161,7 @@
     NSDate *date = [self dateForYear:2017 month:7 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 69.58, 0.006, @"Unexpected declination");
@@ -173,7 +173,7 @@
     NSDate *date = [self dateForYear:2017 month:7 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:100000 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:100000 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, -3.17, 0.005, @"Unexpected declination");
@@ -185,7 +185,7 @@
     NSDate *date = [self dateForYear:2017 month:7 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(0, 120);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:100000 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:100000 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 0.32, 0.005, @"Unexpected declination");
@@ -197,7 +197,7 @@
     NSDate *date = [self dateForYear:2017 month:7 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-80, 240);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:100000 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:100000 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 69.00, 0.005, @"Unexpected declination");
@@ -213,7 +213,7 @@
     NSDate *date = [self dateForYear:2018 month:1 day:10];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.014986, -105.270546);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:1630.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:1630.0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 8.3790, 0.001, @"Unexpected declination");
@@ -227,7 +227,7 @@
     NSDate *date = [self dateForYear:2019 month:8 day:28];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(51.507335, -0.127683);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:22.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:22.0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, -0.19978, 0.002, @"Unexpected declination");
@@ -241,7 +241,7 @@
     NSDate *date = [self dateForYear:2019 month:12 day:31];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-33.867487, 151.206990);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:54.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:54.0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy(declination.magneticDeclination, 12.60236, 0.003, @"Unexpected declination");
@@ -257,7 +257,7 @@
     
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-33.867487, 151.206990);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:54.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:54.0 date:date];
     XCTAssertNil(declination, @"Declination should be nil");
     
 }
@@ -272,7 +272,7 @@
     
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(-33.867487, 151.206990);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:54.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:54.0 date:date];
     XCTAssertNil(declination, @"Declination should be nil");
 }
 
@@ -283,7 +283,7 @@
     NSDate *date = [self dateForYear:2018 month:1 day:10];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.014986, -105.270546);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:1630.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:1630.0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy([declination trueHeadingFromMagneticHeading:94.0], 94.0 + 8.37904, 0.001, @"Unexpected true heading");
@@ -297,7 +297,7 @@
     NSDate *date = [self dateForYear:2018 month:1 day:10];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.014986, -105.270546);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:1630.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:1630.0 date:date];
     
     NSLog(@"declination = %f", declination.magneticDeclination);
     XCTAssertEqualWithAccuracy([declination magneticHeadingFromTrueHeading:94.0 + 8.37904], 94.0, 0.001, @"Unexpected magnetic heading");
@@ -338,7 +338,7 @@
     
     NSDate *dateInBounds = [[CCMagneticModel instance] dateWithinModelBoundsFromDate:inputDate];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.014986, -105.270546);
-    XCTAssertNotNil([[CCMagneticModel instance] declinationForCoordinate:coord elevation:1630 date:dateInBounds], @"Declination was nil");
+    XCTAssertNotNil([[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:1630 date:dateInBounds], @"Declination was nil");
 }
 
 - (void) testDateWithinBounds02 {
@@ -347,7 +347,7 @@
     
     NSDate *dateInBounds = [[CCMagneticModel instance] dateWithinModelBoundsFromDate:inputDate];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.014986, -105.270546);
-    XCTAssertNotNil([[CCMagneticModel instance] declinationForCoordinate:coord elevation:1630 date:dateInBounds], @"Declination was nil");
+    XCTAssertNotNil([[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:1630 date:dateInBounds], @"Declination was nil");
 }
 
 - (void) testHeadingInBounds01 {
@@ -357,7 +357,7 @@
     NSDate *date = [self dateForYear:2018 month:1 day:10];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.714353, -74.005973);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:57.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:57.0 date:date];
     double heading = [declination trueHeadingFromMagneticHeading:0.0];
     
     NSLog(@"heading = %f", heading);
@@ -373,7 +373,7 @@
     NSDate *date = [self dateForYear:2018 month:1 day:10];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.014986, -105.270546);
     
-    CCGeomagneticParameters *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:1630.0 date:date];
+    CCGeomagneticParameters *declination = [[CCMagneticModel instance] magneticParametersForCoordinate:coord elevation:1630.0 date:date];
     double heading = [declination magneticHeadingFromTrueHeading:0.0];
     
     NSLog(@"heading = %f", heading);

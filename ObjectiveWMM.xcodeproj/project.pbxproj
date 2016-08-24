@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B1277A61D6DC8A400845D96 /* FieldStrengthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B70F8F81D6DC2C900AC4F6E /* FieldStrengthTests.m */; };
+		1B1277A81D6DCBF500845D96 /* InclinationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277A71D6DCBF500845D96 /* InclinationTests.m */; };
 		DC37B8661B3375E70041F93C /* ObjectiveWMM.h in Headers */ = {isa = PBXBuildFile; fileRef = DC70A01A1A400ED50055DCDE /* ObjectiveWMM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC709FCC1A3FDB2E0055DCDE /* CCGeomagneticParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = DC709FB11A3FDB2E0055DCDE /* CCGeomagneticParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC709FCD1A3FDB2E0055DCDE /* CCGeomagneticParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = DC709FB21A3FDB2E0055DCDE /* CCGeomagneticParameters.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B1277A71D6DCBF500845D96 /* InclinationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InclinationTests.m; path = ObjectiveWMMTests/InclinationTests.m; sourceTree = SOURCE_ROOT; };
 		1B70F8F81D6DC2C900AC4F6E /* FieldStrengthTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FieldStrengthTests.m; path = ObjectiveWMMTests/FieldStrengthTests.m; sourceTree = SOURCE_ROOT; };
 		DC709FB11A3FDB2E0055DCDE /* CCGeomagneticParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGeomagneticParameters.h; sourceTree = "<group>"; };
 		DC709FB21A3FDB2E0055DCDE /* CCGeomagneticParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGeomagneticParameters.m; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				DC71D8E1197E067F00C665CB /* Supporting Files */,
 				DC709FEA1A3FDDE30055DCDE /* DeclinationTests.m */,
 				1B70F8F81D6DC2C900AC4F6E /* FieldStrengthTests.m */,
+				1B1277A71D6DCBF500845D96 /* InclinationTests.m */,
 			);
 			name = ObjectiveWMMTests;
 			path = meeus64Tests;
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1277A81D6DCBF500845D96 /* InclinationTests.m in Sources */,
 				DC709FEB1A3FDDE30055DCDE /* DeclinationTests.m in Sources */,
 				1B1277A61D6DC8A400845D96 /* FieldStrengthTests.m in Sources */,
 			);

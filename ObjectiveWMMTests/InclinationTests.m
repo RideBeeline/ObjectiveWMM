@@ -10,13 +10,13 @@
 #import <XCTest/XCTest.h>
 #import <ObjectiveWMM/ObjectiveWMM.h>
 
-@interface FieldStrengthTests : XCTestCase
+@interface InclinationTests : XCTestCase
 
 @property (nonatomic, strong) NSCalendar *gregorian;
 
 @end
 
-@implementation FieldStrengthTests
+@implementation InclinationTests
 
 - (NSCalendar *) gregorian {
     
@@ -60,7 +60,7 @@
 
 // See http://www.ngdc.noaa.gov/geomag/WMM/data/WMM2015/WMM2015testvalues.pdf for tests
 
-- (void) testForce01 {
+- (void) testInclination01 {
     
     NSDate *date = [self dateForYear:2015 month:1 day:1];
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
