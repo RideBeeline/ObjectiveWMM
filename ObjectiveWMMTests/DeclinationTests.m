@@ -60,6 +60,18 @@
 
 // See http://www.ngdc.noaa.gov/geomag/WMM/data/WMM2015/WMM2015testvalues.pdf for tests 01 through 12
 
+- (void) testForce01 {
+    
+    NSDate *date = [self dateForYear:2015 month:1 day:1];
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(80, 0);
+    
+    CCMagneticDeclination *declination = [[CCMagneticModel instance] declinationForCoordinate:coord elevation:0 date:date];
+    
+    NSLog(@"field Strength = %f", declination.fieldStrength);
+    XCTAssertEqualWithAccuracy(declination.fieldStrength, 54836.0/1000.0, 0.005, @"Unexpected force");
+    
+}
+
 - (void) testDeclination01 {
     
     NSDate *date = [self dateForYear:2015 month:1 day:1];
