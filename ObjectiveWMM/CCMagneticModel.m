@@ -102,10 +102,9 @@ const char * getPathForResource(const char *fileName, const char *fileExtension)
     MAG_FreeMagneticModelMemory(_magneticModels[0]);
 }
 
-+(CLLocationDirection) magneticParametersForLocation:(CLLocation *) location {
++(CCGeomagneticParameters *) magneticParametersForLocation:(CLLocation *) location {
     CCMagneticModel *instance = [CCMagneticModel instance];
-    CCGeomagneticParameters *declination = [instance magneticParametersForCoordinate:location.coordinate elevation:location.altitude date:location.timestamp];
-    return declination.magneticDeclination;
+    return [instance magneticParametersForCoordinate:location.coordinate elevation:location.altitude date:location.timestamp];
 }
 
 - (CCGeomagneticParameters *) magneticParametersForCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date {

@@ -15,7 +15,7 @@
 
 + (CCMagneticModel *) instance;
 
-+(CLLocationDirection) magneticParametersForLocation:(CLLocation *) location;
++ (CCGeomagneticParameters *) magneticParametersForLocation:(CLLocation *) location;
 - (CCGeomagneticParameters *) magneticParametersForCoordinate:(CLLocationCoordinate2D)coordinate elevation:(CLLocationDistance)elevation date:(NSDate *)date;
 - (BOOL) dateIsWithinModelBounds:(NSDate *) date;
 - (NSDate *) modelValidityStart;
